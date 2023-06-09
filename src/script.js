@@ -55,7 +55,7 @@ fontLoader.load("/fonts/helvetiker_regular.typeface.json", (font) => {
 
   textGeometry.center();
 
-  console.time("donuts");
+//   console.time("donuts");
 
   const donutGeometry = new THREE.TorusGeometry(0.3, 0.2, 20, 45);
   const donutMaterial = new THREE.MeshMatcapMaterial({matcap: matcapTexture});
@@ -76,7 +76,7 @@ fontLoader.load("/fonts/helvetiker_regular.typeface.json", (font) => {
     scene.add(donut);
   }
 
-  console.timeEnd("donuts");
+//   console.timeEnd("donuts");
 
   const textMaterial = new THREE.MeshMatcapMaterial({ matcap: matcapTexture });
   //   textMaterial.wireframe = true;
