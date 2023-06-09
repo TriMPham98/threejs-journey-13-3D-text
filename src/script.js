@@ -49,6 +49,9 @@ fontLoader.load(
                 bevelSegments: 4
             }
         );
+        textGeometry.computeBoundingBox();
+
+
         const textMaterial = new THREE.MeshBasicMaterial();
         textMaterial.wireframe = true;
         const text = new THREE.Mesh(textGeometry, textMaterial);
